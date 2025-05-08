@@ -1,23 +1,39 @@
 pipeline {
     agent any
-
     stages {
-        stage('Ejecutar pruebas unitarias') {
+        stage('Checkout') {
+            steps {
+                git url: 'pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'git@github.com:josperlaz2/RA5.1-Jenkins.git', branch: 'main'
+            }
+        }
+        stage('Unit Test') {
             steps {
                 sh 'python -m unittest test_calculadora.py'
             }
         }
     }
-
     post {
         always {
-            echo 'Pipeline finalizada'
+            echo 'Pipeline completada. Revisa los logs para detalles.'
         }
-        success {
-            echo '¡Las pruebas unitarias pasaron!'
+    }
+}', branch: 'main'
+            }
         }
-        failure {
-            echo '¡Las pruebas unitarias fallaron!'
+        stage('Unit Test') {
+            steps {
+                sh 'python -m unittest test_calculadora.py'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'Pipeline completada. Revisa los logs para detalles.'
         }
     }
 }
