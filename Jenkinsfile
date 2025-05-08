@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'git@github.com:josperlaz2/RA5.1-Jenkins.git', branch: 'main'
+                git url: 'https://github.com/tu_usuario/python-calculadora-ci.git' , branch: 'main'
             }
         }
         stage('Unit Test') {
