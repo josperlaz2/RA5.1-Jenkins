@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Ejecutar pruebas unitarias') {
             steps {
-                sh 'python3 -m unittest test_calculadora.py'
+                sh 'python -m unittest test_calculadora.py'
             }
         }
     }
