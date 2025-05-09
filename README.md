@@ -113,3 +113,4 @@ Nuestro siguiente paso fue configurar una pipeline de Integración Continua (CI)
 6.  **Experimentamos con fallos en las pruebas:** Introdujimos errores intencionadamente en nuestras pruebas unitarias para verificar que la pipeline en Jenkins detectara los fallos y nos alertara de ellos.
 
 ¡Con esto, hemos establecido un flujo de trabajo de integración continua básico para nuestro proyecto de calculadora en Python, asegurando que nuestras pruebas se ejecuten automáticamente con cada cambio en el código!
+![jeckinsfile](/assets/jenkins.png)
