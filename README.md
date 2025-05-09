@@ -32,7 +32,7 @@ Nuestro primer objetivo fue desarrollar un programa en Python capaz de multiplic
         else:
             print("Uso: python calculadora.py <numero1> <numero2>")
     ```
-
+![calculadora](/assets/calculadora.png)
 2.  **Desarrollamos el archivo `test_calculadora.py`:** En este archivo, implementamos pruebas unitarias para la función `multiplicar` utilizando el módulo `unittest` de Python. Creamos varios casos de prueba para cubrir diferentes escenarios, incluyendo la multiplicación de números positivos, negativos, cero y decimales.
 
     ```python
