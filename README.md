@@ -63,9 +63,9 @@ Nuestro primer objetivo fue desarrollar un programa en Python capaz de multiplic
     if __name__ == '__main__':
         unittest.main()
     ```
-
+![calculadora](/assets/test_calculadora.png)
 3.  **Ejecutamos el programa y las pruebas:** Verificamos que nuestro programa funciona correctamente ejecutándolo desde la línea de comandos con diferentes entradas. También nos aseguramos de que todas nuestras pruebas unitarias pasaran al ejecutarlas con el módulo `unittest`.
-
+![testProgramas](/assets/testProgramas.png)
 4.  **Subimos nuestro código a GitHub:** Creamos un nuevo repositorio en GitHub y subimos los archivos `calculadora.py` y `test_calculadora.py`.
 
 ## Tarea 2: Pipeline de Integración Continua con Jenkins
@@ -101,7 +101,7 @@ Nuestro siguiente paso fue configurar una pipeline de Integración Continua (CI)
         }
     }
     ```
-
+![calculadora](/assets/jenkinsfile.png)
 2.  **Subimos el `Jenkinsfile` a nuestro repositorio:** Agregamos y commiteamos el archivo `Jenkinsfile` a nuestro repositorio en GitHub.
 
 3.  **Configuramos la pipeline en Jenkins:** Creamos una nueva pipeline en Jenkins y la configuramos para obtener la definición de la pipeline desde nuestro repositorio Git, especificando la URL del repositorio y la ruta al `Jenkinsfile`.
